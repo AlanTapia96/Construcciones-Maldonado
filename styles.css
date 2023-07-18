@@ -15,7 +15,12 @@ html {
 }
 
 h2 {
+  font-size: 3rem;
   color: #5291c9;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 .navbar {

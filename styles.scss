@@ -19,8 +19,25 @@ html {
 }
 
 h2 {
+  font-size: 3rem;
+  // position: relative;
   color: $primary-color;
 }
+
+p {
+  font-size: 1.2rem;
+}
+
+// h2::after {
+//   content: "";
+//   position: absolute;
+//   display: block;
+//   width: 50px;
+//   height: 3px;
+//   background: #920417;
+//   bottom: 0;
+//   left: 0;
+// }
 
 // NAVBAR
 
