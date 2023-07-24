@@ -15,12 +15,16 @@ $primary-color: #5291c9;
 }
 
 html {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 1.8rem;
   // position: relative;
+  color: $primary-color;
+}
+
+h3 {
   color: $primary-color;
 }
 
@@ -28,28 +32,31 @@ p {
   font-size: 1.2rem;
 }
 
-// h2::after {
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   width: 50px;
-//   height: 3px;
-//   background: #920417;
-//   bottom: 0;
-//   left: 0;
-// }
-
 // NAVBAR
 
 .navbar {
+  opacity: 0;
   transition: all 0.5s ease-in-out;
 }
 
 .nav-link {
-  color: white;
+  color: $primary-color !important;
+}
+
+.nav-link:hover {
+  color: black !important;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.logo-desktop {
+  display: none;
 }
 
 #mainNav.navbar-shrink {
+  opacity: 1;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
 }
@@ -68,40 +75,67 @@ p {
 
 body {
   position: relative;
+  z-index: 1;
+}
+
+.background {
+  height: 200vh;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(82, 145, 201, 0.15) 30%,
+    rgba(82, 145, 201, 0.15) 68%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .masthead {
+  height: 50vh;
   text-align: center;
   color: black;
-  background: linear-gradient(
-      to bottom,
-      rgba(109, 109, 124, 0.8) 50%,
-      rgba(82, 123, 201, 0.8) 100%
-    ),
-    url("./assets/7.jpg");
+  background: url("./assets/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-}
-.masthead .masthead-subheading {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 75%;
-  margin: 0 auto;
-  line-height: 1.5rem;
-  //   color: $primary-color;
-  color: white;
-}
-.masthead .masthead-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
+
+  .masthead-subheading {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    //   color: $primary-color;
+    color: white;
+  }
+  .masthead-heading {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .img {
+    width: 60%;
+    height: 40%;
+    margin-bottom: 4rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      max-height: 40rem;
+    }
+  }
 }
 
 .servicios .icon-box {
@@ -129,12 +163,57 @@ body {
   border-color: $primary-color;
 }
 
+#nosotros {
+  img {
+    width: 100%;
+    float: left;
+    margin-right: 20px;
+    border-radius: 8px;
+    max-height: 25rem;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+.phone {
+  width: 97%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  border-top: 1px solid black;
+  text-align: center;
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: 200;
+    transition-duration: 0.3s;
+  }
+
+  a:hover {
+    color: $primary-color;
+  }
+}
+
 #portfolio .box {
-  height: 28rem;
+  height: 22rem;
 }
 
 .portfolio-box {
   height: 100%;
+  filter: grayscale(1);
+  transition-duration: 0.5s;
+}
+
+.portfolio-box:hover {
+  filter: grayscale(0);
 }
 
 .portfolio-box .img-fluid {
@@ -234,9 +313,73 @@ body {
   opacity: 1;
 }
 
+#contacto {
+  button {
+    background-color: $primary-color;
+  }
+  h4 {
+    font-weight: 200;
+  }
+  .logo {
+    padding: 2rem 0;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 3rem;
+  }
+
+  .textarea {
+    margin-top: 0.6rem;
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  padding: 2rem 0;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  h4 {
+    color: white;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .textarea {
+    margin-top: 0 !important;
+  }
+
+  .logo-desktop {
+    display: inline-block;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+}
+
 @media (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
   .masthead {
-    height: 100vh;
+    height: 98vh;
     min-height: 40rem;
     // padding-top: 4.5rem;
     // padding-bottom: 0;
@@ -247,6 +390,20 @@ body {
   .masthead h1,
   .masthead .h1 {
     font-size: 3rem;
+  }
+
+  #nosotros {
+    img {
+      width: 30%;
+    }
+  }
+
+  .phone {
+    width: 50%;
+
+    a {
+      font-size: 3rem;
+    }
   }
 }
 @media (min-width: 1200px) {

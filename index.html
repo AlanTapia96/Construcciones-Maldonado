@@ -52,24 +52,32 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   </head>
   <body>
     <main>
+      <div class="background"></div>
       <nav
         class="navbar navbar-expand-lg navbar-light fixed-top py-1"
         id="mainNav"
       >
-        <div class="container px-4 px-lg-5">
+        <div class="container py-3 px-4 px-lg-5">
           <a class="navbar-brand" href="#page-top"
             ><img
               src="./assets/logo_completo.png"
               alt="logo"
-              width="200"
-              height="85"
+              width="175"
+              height="40"
+              class="logo-desktop" />
+            <img
+              src="./assets/logo.png"
+              alt="logo"
+              width="60"
+              height="40"
+              class="logo-mobile"
           /></a>
           <button
-            class="navbar-toggler navbar-toggler-right"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
+            aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -91,197 +99,179 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
       </nav>
       <section class="masthead">
-        <div class="container h-100">
+        <div class="h-100">
           <div class="masthead-subheading">
-            <h1 class="mb-5">CONSTRUCCIONES MALDONADO</h1>
-            <a class="btn btn-primary btn-xl text-uppercase" href="#nosotros"
-              >Conocenos</a
-            >
+            <!-- <h1 class="mb-5">CONSTRUCCIONES MALDONADO</h1> -->
+            <div class="img">
+              <img src="./assets/logo_completo.png" alt="" />
+            </div>
           </div>
-          <!-- <div class="masthead-heading text-uppercase">It's Nice To Meet You</div> -->
         </div>
       </section>
 
+      <section class="servicios my-5">
+        <h2 class="text-center mb-5">SERVICIOS</h2>
+        <div class="container">
+          <div class="row mt-4 justify-content-center">
+            <div
+              class="col-12 col-md-10 d-flex align-items-stretch justify-content-center mb-3"
+            >
+              <div class="icon-box">
+                <div class="row justify-content-center">
+                  <div
+                    class="col-12 col-md-5 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="./assets/design.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                  <div
+                    class="col-12 col-md-6 d-flex justify-content-center flex-column"
+                  >
+                    <h3 class="mb-1">Diseño y planificación</h3>
+                    <p>
+                      Trabajamos en estrecha colaboración con nuestros clientes
+                      para desarrollar diseños personalizados que se ajusten a
+                      sus necesidades, teniendo en cuenta aspectos estéticos,
+                      funcionales y de viabilidad.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-10 d-flex align-items-stretch justify-content-center"
+            >
+              <div class="icon-box">
+                <div class="row flex-column flex-md-row justify-content-center">
+                  <div
+                    class="col-12 col-md-6 d-flex justify-content-center flex-column"
+                  >
+                    <h3 class="mb-1">Remodelaciones y reformas</h3>
+                    <p>
+                      Brindamos servicios de remodelación y reformas para
+                      actualizar y mejorar viviendas y locales comerciales
+                      existentes, adaptándonos a las últimas tendencias y
+                      necesidades del mercado.
+                    </p>
+                  </div>
+                  <div
+                    class="col-12 col-md-5 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="./assets/Checklist.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="nosotros" class="my-5">
-        <h2 class="text-center">QUIENES SOMOS</h2>
+        <h2 class="text-center mb-5">QUIENES SOMOS</h2>
         <div class="container w-75 mt-5">
           <p>
-            Destacado grupo dedicado a la construcción de proyectos de alta
-            calidad y excelencia en CABA y Provincia. Con una trayectoria sólida
-            y un equipo altamente calificado, nos enorgullece ofrecer servicios
-            de construcción de primera categoría tanto en el sector residencial
-            como en el comercial.
+            Destacado grupo dedicado a la construcción de proyectos de
+            <b> alta calidad y excelencia </b> en CABA y Provincia. Con una
+            trayectoria sólida y un equipo altamente calificado, nos enorgullece
+            ofrecer servicios de <b>construcción de primera categoría </b> tanto
+            en el sector residencial como en el comercial.
           </p>
 
-          <p>
-            Uno de los aspectos fundamentales que nos distingue es nuestro
-            enfoque en la satisfacción del cliente. Entendemos que cada proyecto
-            es único y nos esforzamos por comprender las necesidades y deseos de
-            nuestros clientes. Trabajamos de la mano con ellos desde las etapas
-            iniciales de diseño y planificación hasta la finalización exitosa de
-            cada obra.
-          </p>
-
-          <p>
-            Nuestro equipo de profesionales altamente capacitados y
-            experimentados es clave para el éxito de nuestros proyectos.
-            Contamos con arquitectos, ingenieros, diseñadores y técnicos que se
-            dedican a garantizar la calidad en cada paso del proceso. Además,
-            nos aseguramos de utilizar los materiales y técnicas más avanzadas
-            para asegurar la durabilidad y el acabado impecable de nuestras
-            construcciones.
-          </p>
-        </div>
-      </section>
-      <section class="servicios my-5">
-        <h2 class="text-center">SERVICIOS</h2>
-
-        <div class="row mt-4 justify-content-center">
-          <div
-            class="col-12 col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center"
-          >
-            <div class="icon-box">
-              <h4 class="mb-3">Diseño y planificación</h4>
-              <p>
-                Trabajamos en estrecha colaboración con nuestros clientes para
-                desarrollar diseños personalizados que se ajusten a sus
-                necesidades, teniendo en cuenta aspectos estéticos, funcionales
-                y de viabilidad.
-              </p>
-            </div>
+          <div class="text-special">
+            <img src="./assets/about-us.png" alt="" srcset="" />
+            <p>
+              Uno de los aspectos fundamentales que nos distingue es nuestro
+              enfoque en la satisfacción del cliente. Entendemos que
+              <b> cada proyecto es único </b> y nos esforzamos por comprender
+              las necesidades y deseos de nuestros clientes. Trabajamos de la
+              mano con ellos desde las etapas iniciales de diseño y
+              planificación hasta la finalización exitosa de cada obra.
+            </p>
+            <p>
+              Nuestro equipo de <b> profesionales altamente capacitados </b> y
+              experimentados es clave para el éxito de nuestros proyectos.
+              Contamos con arquitectos, ingenieros, diseñadores y técnicos que
+              se dedican a garantizar la calidad en cada paso del proceso.
+              Además, nos aseguramos de utilizar los materiales y técnicas más
+              avanzadas para asegurar la durabilidad y el acabado impecable de
+              nuestras construcciones.
+            </p>
+            <p>
+              Nuestro compromiso con la calidad, la eficiencia y el
+              <b>cumplimiento de plazos </b> nos ha permitido obtener una
+              <b>sólida reputación </b> en la industria de la construcción.
+              Trabajamos con proveedores confiables y nos aseguramos de cumplir
+              con todas las normativas y regulaciones vigentes.
+            </p>
+            <p>
+              En resumen, Construcciones Maldonado es una empresa constructora
+              comprometida con la excelencia, la satisfacción del cliente y la
+              entrega de proyectos de alta calidad. Estamos listos para asumir
+              desafíos y materializar las visiones de nuestros clientes,
+              proporcionando soluciones constructivas innovadoras y confiables.
+            </p>
           </div>
-          <div
-            class="col-12 col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center"
-          >
-            <div class="icon-box">
-              <h4 class="mb-3">Remodelaciones y reformas</h4>
-              <p>
-                Brindamos servicios de remodelación y reformas para actualizar y
-                mejorar viviendas y locales comerciales existentes, adaptándonos
-                a las últimas tendencias y necesidades del mercado.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="my-5">
-        <div class="container w-75">
-          <p>
-            Nuestro compromiso con la calidad, la eficiencia y el cumplimiento
-            de plazos nos ha permitido obtener una sólida reputación en la
-            industria de la construcción. Trabajamos con proveedores confiables
-            y nos aseguramos de cumplir con todas las normativas y regulaciones
-            vigentes.
-          </p>
-
-          <p>
-            En resumen, Construcciones Maldonado es una empresa constructora
-            comprometida con la excelencia, la satisfacción del cliente y la
-            entrega de proyectos de alta calidad. Estamos listos para asumir
-            desafíos y materializar las visiones de nuestros clientes,
-            proporcionando soluciones constructivas innovadoras y confiables.
-          </p>
-
-          <p>
-            Gracias por su atención y estamos a su disposición para responder
-            cualquier pregunta que puedan tener.
-          </p>
         </div>
       </section>
 
       <section id="portfolio">
-        <h2 class="text-center mb-4">PROYECTOS</h2>
-        <div class="container-fluid p-0">
+        <h2 class="text-center mb-5">PROYECTOS</h2>
+        <div class="container p-0">
           <div class="row g-0">
             <div class="col-lg-4 col-sm-6 box">
-              <a
-                class="portfolio-box"
-                href="./assets/1.jpg"
-                title="Project Name"
-              >
+              <a class="portfolio-box" href="./assets/1.jpg">
                 <img class="img-fluid" src="./assets/1.jpg" alt="..." />
-                <div class="portfolio-box-caption">
-                  <div class="project-category text-white-50">Category</div>
-                  <div class="project-name">Project Name</div>
-                </div>
               </a>
             </div>
             <div class="col-lg-4 col-sm-6 box">
-              <a
-                class="portfolio-box"
-                href="./assets/4.jpg"
-                title="Project Name"
-              >
+              <a class="portfolio-box" href="./assets/4.jpg">
                 <img class="img-fluid" src="./assets/4.jpg" alt="..." />
-                <div class="portfolio-box-caption">
-                  <div class="project-category text-white-50">Category</div>
-                  <div class="project-name">Project Name</div>
-                </div>
               </a>
             </div>
             <div class="col-lg-4 col-sm-6 box">
-              <a
-                class="portfolio-box"
-                href="./assets/3.jpg"
-                title="Project Name"
-              >
+              <a class="portfolio-box" href="./assets/3.jpg">
                 <img class="img-fluid" src="./assets/3.jpg" alt="..." />
-                <div class="portfolio-box-caption">
-                  <div class="project-category text-white-50">Category</div>
-                  <div class="project-name">Project Name</div>
-                </div>
               </a>
             </div>
             <div class="col-lg-4 col-sm-6 box">
-              <a
-                class="portfolio-box"
-                href="./assets/2.jpg"
-                title="Project Name"
-              >
+              <a class="portfolio-box" href="./assets/2.jpg">
                 <img class="img-fluid" src="./assets/2.jpg" alt="..." />
-                <div class="portfolio-box-caption">
-                  <div class="project-category text-white-50">Category</div>
-                  <div class="project-name">Project Name</div>
-                </div>
               </a>
             </div>
             <div class="col-lg-4 col-sm-6 box">
-              <a
-                class="portfolio-box"
-                href="./assets/5.jpg"
-                title="Project Name"
-              >
+              <a class="portfolio-box" href="./assets/5.jpg">
                 <img class="img-fluid" src="./assets/5.jpg" alt="..." />
-                <div class="portfolio-box-caption">
-                  <div class="project-category text-white-50">Category</div>
-                  <div class="project-name">Project Name</div>
-                </div>
               </a>
             </div>
             <div class="col-lg-4 col-sm-6 box">
-              <a
-                class="portfolio-box"
-                href="./assets/6.jpg"
-                title="Project Name"
-              >
+              <a class="portfolio-box" href="./assets/6.jpg">
                 <img class="img-fluid" src="./assets/6.jpg" alt="..." />
-                <div class="portfolio-box-caption p-3">
-                  <div class="project-category text-white-50">Category</div>
-                  <div class="project-name">Project Name</div>
-                </div>
               </a>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="page-section my-5" id="contact">
+      <section class="page-section my-5" id="contacto">
         <div class="container px-4 px-lg-5">
           <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-10 text-center">
-              <h2 class="mt-0">Contactanos</h2>
-              <hr class="divider" />
-              <h4 class="text-muted mb-5">
+              <h2 class="mt-0 mb-5">CONTACTANOS</h2>
+              <div class="logo">
+                <img
+                  class="img-fluid"
+                  src="./assets/logo_completo.png"
+                  alt=""
+                />
+              </div>
+              <h4 class="mb-5">
                 ¿Listo para comenzar tu próximo proyecto con nosotros? Envíanos
                 un mensaje y nos pondremos en contacto con usted lo antes
                 posible!
@@ -305,7 +295,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       class="invalid-feedback"
                       data-sb-feedback="name:required"
                     >
-                      A name is required.
+                      El nombre es requerido.
                     </div>
                   </div>
                   <!-- Email address input-->
@@ -322,13 +312,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       class="invalid-feedback"
                       data-sb-feedback="email:required"
                     >
-                      An email is required.
+                      El mail es requerido.
                     </div>
                     <div
                       class="invalid-feedback"
                       data-sb-feedback="email:email"
                     >
-                      Email is not valid.
+                      Email no válido.
                     </div>
                   </div>
                   <!-- Phone number input-->
@@ -350,7 +340,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   </div>
                 </div>
                 <!-- Message input-->
-                <div class="col-md-6">
+                <div class="col-md-6 textarea">
                   <div class="form-floating h-100">
                     <textarea
                       class="form-control h-100"
@@ -382,9 +372,38 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
       </section>
+      <section class="phone mt-5 mb-3">
+        <h5>También podes comunicarte con nosotros al siguiente numero:</h5>
+        <a href="tel:+5491125147184">+54 9 11 2514-7184</a>
+      </section>
     </main>
-    <script src="./scripts/main.js"></script>
+    <footer>
+      <div class="container">
+        <div class="row d-flex flex-column flex-sm-row">
+          <div class="col-12 col-sm-4">
+            <h4>Conocenos</h4>
+            <ul>
+              <li><a href="#nosotros">Sobre nosotros</a></li>
+              <li><a href="#portfolio">Galeria de Proyectos</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-4 mt-4 mt-sm-0">
+            <h4>Contactanos</h4>
+            <a href="">Formulario de contacto</a>
+          </div>
+          <div class="col-12 col-sm-4 mt-4 mt-sm-0">
+            <h4>Nuestras redes</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- SimpleLightbox plugin JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
