@@ -19,13 +19,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
   document.addEventListener("scroll", navbarShrink);
 
   // Activate Bootstrap scrollspy on the main nav element
-  //   const mainNav = document.body.querySelector("#mainNav");
-  //   if (mainNav) {
-  //     new bootstrap.ScrollSpy(document.body, {
-  //       target: "#mainNav",
-  //       rootMargin: "0px 0px -40%",
-  //     });
-  //   }
+  const mainNav = document.body.querySelector("#mainNav");
+  if (mainNav) {
+    new bootstrap.ScrollSpy(document.body, {
+      target: "#mainNav",
+      rootMargin: "0px 0px -50%",
+    });
+  }
 
   // Collapse responsive navbar when toggler is visible
   const navbarToggler = document.body.querySelector(".navbar-toggler");
@@ -43,4 +43,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
   new SimpleLightbox({
     elements: "#portfolio a.portfolio-box",
   });
+});
+
+AOS.init({
+  startEvent: "load",
+  // duration: 1000,
+  easing: "ease-in-out",
+  once: true,
+  mirror: true,
 });

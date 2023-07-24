@@ -28,14 +28,8 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
-    <link
-      href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="https://unpkg.com/transition-style" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/transition-style" /> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- SimpleLightbox plugin CSS-->
     <link
@@ -43,8 +37,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       rel="stylesheet"
     />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
@@ -101,7 +93,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <section class="masthead">
         <div class="h-100">
           <div class="masthead-subheading">
-            <!-- <h1 class="mb-5">CONSTRUCCIONES MALDONADO</h1> -->
             <div class="img">
               <img src="./assets/logo_completo.png" alt="" />
             </div>
@@ -115,6 +106,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="row mt-4 justify-content-center">
             <div
               class="col-12 col-md-10 d-flex align-items-stretch justify-content-center mb-3"
+              data-aos="fade-left"
+              data-aos-delay="0"
+              data-aos-duration="1000"
             >
               <div class="icon-box">
                 <div class="row justify-content-center">
@@ -144,6 +138,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
             <div
               class="col-12 col-md-10 d-flex align-items-stretch justify-content-center"
+              data-aos="fade-right"
+              data-aos-delay="0"
+              data-aos-duration="1000"
             >
               <div class="icon-box">
                 <div class="row flex-column flex-md-row justify-content-center">
@@ -174,9 +171,57 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
       </section>
+
+      <section id="portfolio">
+        <h2 class="text-center mb-5">PROYECTOS</h2>
+        <div
+          class="container p-0"
+          data-aos="zoom-out"
+          data-aos-delay="0"
+          data-aos-duration="400"
+        >
+          <div class="row g-0">
+            <div class="col-lg-4 col-sm-6 box">
+              <a class="portfolio-box" href="./assets/1.jpg">
+                <img class="img-fluid" src="./assets/1.jpg" alt="..." />
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 box">
+              <a class="portfolio-box" href="./assets/4.jpg">
+                <img class="img-fluid" src="./assets/4.jpg" alt="..." />
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 box">
+              <a class="portfolio-box" href="./assets/3.jpg">
+                <img class="img-fluid" src="./assets/3.jpg" alt="..." />
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 box">
+              <a class="portfolio-box" href="./assets/2.jpg">
+                <img class="img-fluid" src="./assets/2.jpg" alt="..." />
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 box">
+              <a class="portfolio-box" href="./assets/5.jpg">
+                <img class="img-fluid" src="./assets/5.jpg" alt="..." />
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 box">
+              <a class="portfolio-box" href="./assets/6.jpg">
+                <img class="img-fluid" src="./assets/6.jpg" alt="..." />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="nosotros" class="my-5">
         <h2 class="text-center mb-5">QUIENES SOMOS</h2>
-        <div class="container w-75 mt-5">
+        <div
+          class="container w-75 mt-5"
+          data-aos="zoom-in"
+          data-aos-delay="0"
+          data-aos-duration="400"
+        >
           <p>
             Destacado grupo dedicado a la construcción de proyectos de
             <b> alta calidad y excelencia </b> en CABA y Provincia. Con una
@@ -218,44 +263,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               desafíos y materializar las visiones de nuestros clientes,
               proporcionando soluciones constructivas innovadoras y confiables.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio">
-        <h2 class="text-center mb-5">PROYECTOS</h2>
-        <div class="container p-0">
-          <div class="row g-0">
-            <div class="col-lg-4 col-sm-6 box">
-              <a class="portfolio-box" href="./assets/1.jpg">
-                <img class="img-fluid" src="./assets/1.jpg" alt="..." />
-              </a>
-            </div>
-            <div class="col-lg-4 col-sm-6 box">
-              <a class="portfolio-box" href="./assets/4.jpg">
-                <img class="img-fluid" src="./assets/4.jpg" alt="..." />
-              </a>
-            </div>
-            <div class="col-lg-4 col-sm-6 box">
-              <a class="portfolio-box" href="./assets/3.jpg">
-                <img class="img-fluid" src="./assets/3.jpg" alt="..." />
-              </a>
-            </div>
-            <div class="col-lg-4 col-sm-6 box">
-              <a class="portfolio-box" href="./assets/2.jpg">
-                <img class="img-fluid" src="./assets/2.jpg" alt="..." />
-              </a>
-            </div>
-            <div class="col-lg-4 col-sm-6 box">
-              <a class="portfolio-box" href="./assets/5.jpg">
-                <img class="img-fluid" src="./assets/5.jpg" alt="..." />
-              </a>
-            </div>
-            <div class="col-lg-4 col-sm-6 box">
-              <a class="portfolio-box" href="./assets/6.jpg">
-                <img class="img-fluid" src="./assets/6.jpg" alt="..." />
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -389,7 +396,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
           <div class="col-12 col-sm-4 mt-4 mt-sm-0">
             <h4>Contactanos</h4>
-            <a href="">Formulario de contacto</a>
+            <a href="#contacto">Formulario de contacto</a>
           </div>
           <div class="col-12 col-sm-4 mt-4 mt-sm-0">
             <h4>Nuestras redes</h4>
