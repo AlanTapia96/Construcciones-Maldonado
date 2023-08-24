@@ -28,14 +28,14 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/transition-style" /> -->
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- SimpleLightbox plugin CSS-->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script
       type="text/javascript"
@@ -78,7 +78,7 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto my-2 my-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#about">Nosotros</a>
+                <a class="nav-link" href="#nosotros">Nosotros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -175,7 +175,7 @@
       <section id="portfolio">
         <h2 class="text-center mb-5">PROYECTOS</h2>
         <div
-          class="container p-0"
+          class="container"
           data-aos="zoom-out"
           data-aos-delay="0"
           data-aos-duration="400"
@@ -223,7 +223,7 @@
           data-aos-duration="400"
         >
           <p>
-            Destacado grupo dedicado a la construcción de proyectos de
+            Somos un grupo dedicado a la construcción de proyectos de
             <b> alta calidad y excelencia </b> en CABA y Provincia. Con una
             trayectoria sólida y un equipo altamente calificado, nos enorgullece
             ofrecer servicios de <b>construcción de primera categoría </b> tanto
@@ -309,12 +309,12 @@
                   <div class="form-floating my-2">
                     <input
                       class="form-control"
-                      id="email"
+                      id="mail"
                       type="email"
                       placeholder="name@example.com"
                       data-sb-validations="required,email"
                     />
-                    <label for="email">Email</label>
+                    <label for="mail">Email</label>
                     <div
                       class="invalid-feedback"
                       data-sb-feedback="email:required"
@@ -400,6 +400,18 @@
           </div>
           <div class="col-12 col-sm-4 mt-4 mt-sm-0">
             <h4>Nuestras redes</h4>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/profile.php?id=100083379128652&mibextid=ZbWKwL"
+                class="facebook"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+              <a
+                href="https://instagram.com/construccionesmaldonadoa?igshid=MzRlODBiNWFlZA=="
+                class="instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
@@ -411,6 +423,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <script src="./scripts/form.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
